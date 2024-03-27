@@ -1,25 +1,30 @@
 
 
 const result = document.querySelector("body");
-let number = 0;
 
 for(i = 1; i <= 100; i++) {
-
+    let text = i;
+    let type =`number`
+    const square = `square`
     if(i % 3 === 0) {
         console.log(i);
-        const number = `<div>Fizz</div>`;
-        console.log(number);
+        text = `Fizz`;
+        type = `fizz`;
+        console.log(text);
     }
 
     if (i % 5 === 0){
         console.log(i);
-        const number = `<div>Buzz</div>`
-        console.log(number);
+        text = `Buzz`;
+        type = `buzz`;
+        console.log(text);
     }
 
-    if (i % 5 === 0 && i % 5 !== 0) {
-        const number =`<div>FizzBuzz</div>`
-        console.log(number);
+    if (i % 5 === 0 && i % 3 === 0) {
+        text =`FizzBuzz`;
+        type = `fizzbuzz`;
+        console.log(text);
     }
-    result.innerHTML += number
+
+    result.innerHTML += `<div class="${type} ${square}">${text}</div>`
 }
