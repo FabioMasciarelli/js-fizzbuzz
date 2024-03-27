@@ -5,4 +5,4 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 2. [x]individuare quali sono i  numeri divisibili per 3, quali sono i  numeri divisibili per 5 e quali sono divisibili per entrambi
  - per i numeri divisibili per 3, stampare fizz
  - per i numeri divisibili per 5, stampare buzz
- - per i numeri divisibili per entrambi, stampare fizz buzz
+ - per i numeri divisibili per entrambi, stampare fizzbuzz
