@@ -5,15 +5,28 @@
 }
 
 body {
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
     background-color: #083b4c;
-    gap: 20px;
 }
 
 h1 {
     color: white;
+    font-size: 4rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    min-height: 100px;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .number {
@@ -33,7 +46,7 @@ h1 {
 }
 
 .square {
-    width: calc(100% / 10);
+    width: calc(100% / 10 - 20px);
     padding: 20px;
     display: flex;
     justify-content: center;
