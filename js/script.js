@@ -2,13 +2,13 @@ const header = document.querySelector(".header");
 const title = `Fizz Buzz DOM`;
 header.innerHTML = `<h1>${title}</h1>`;
 
-const result = document.querySelector(".container");
+
+const containerElem = document.querySelector(".container");
+let result = "";
 
 for(i = 1; i <= 100; i++) {
     let text = i;
     let type =`number`;
-    const square = `square`;
-
     
     if (i % 5 === 0 && i % 3 === 0) {
         text =`FizzBuzz`;
@@ -25,6 +25,9 @@ for(i = 1; i <= 100; i++) {
         type = `fizz`;
         console.log(text);
     }
-
-    result.innerHTML += `<div class="${type} ${square}">${text}</div>`;
+    
+    result += `<div class="${type} square">${text}</div>`;
 }
+
+containerElem.innerHTML += result;
+console.log(containerElem);
